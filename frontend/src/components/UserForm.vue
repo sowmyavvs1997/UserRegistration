@@ -110,8 +110,22 @@ const validate = () => {
   else errors.email = ''
   if (errors.email) valid = false
 
-  errors.mobile = user.mobile ? '' : 'Mobile number is required'
-  if (errors.mobile) valid = false
+  const mobileRaw = user.mobile ? user.mobile.trim() : ''
+  if (!mobileRaw) {
+    errors.mobile = 'Mobile number is required'
+    valid = false
+  } else {
+    const digits = mobileRaw.replace(/\D/g, '')
+    if (digits.length < 10) {
+      errors.mobile = 'Mobile number must have at least 10 digits'
+      valid = false
+    } else if (digits.length > 15) {
+      errors.mobile = 'Mobile number looks too long'
+      valid = false
+    } else {
+      errors.mobile = ''
+    }
+  }
 
   if (!user.password) errors.password = 'Password is required'
   else if (user.password.length < 6) errors.password = 'Password must be at least 6 characters'
