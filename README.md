@@ -2,6 +2,12 @@
 
 A simple full-stack **User Registration and Management** application built with **Vue.js**, **Vite**, **Spring Boot**, and **MongoDB**. It demonstrates basic **CRUD** operations and provides a desktop-like admin UI.
 
+<img width="1355" height="647" alt="image" src="https://github.com/user-attachments/assets/25ce09ee-983c-411f-a638-10666cd1844b" />
+
+
+<img width="1355" height="613" alt="image" src="https://github.com/user-attachments/assets/006c7808-999a-42f8-ac75-3a0f253ad7df" />
+
+
 ---
 
 ## 🚀 Features
