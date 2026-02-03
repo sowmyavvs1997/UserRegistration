@@ -118,28 +118,7 @@ Notes:
 
 ---
 
-## ✅ Testing
 
-- Use the UI to create users and verify they appear on the **Users** page.
-- Use `curl` or Postman to call the API endpoints directly.
 
----
 
-## ⚠️ Security & Production
-
-- This project is a demo. For production use you should:
-  - Hash passwords before storing (BCrypt, Argon2, etc.).
-  - Add authentication & authorization.
-  - Sanitize inputs and add rate limiting.
-  - Configure HTTPS and secure headers.
-
----
-
-## 📬 Questions
-
-If you want any setup script, CI config, or deployment instructions (e.g., Dockerizing the backend and serving the frontend with Nginx), tell me and I can add them.
-
----
-
-Licensed for demo purposes.
 
